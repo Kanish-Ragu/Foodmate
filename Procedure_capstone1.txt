@@ -1,0 +1,111 @@
+-------------------------------GIT-CAPSTONE1------------------------------------------
+
+C:\Users\Admin>cd Desktop
+
+C:\Users\Admin\Desktop>cd foodmate
+
+C:\Users\Admin\Desktop\foodmate>git init
+Initialized empty Git repository in C:/Users/Admin/Desktop/foodmate/.git/
+
+C:\Users\Admin\Desktop\foodmate>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+C:\Users\Admin\Desktop\foodmate>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Admin\Desktop\foodmate>git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+#create an index.html file in vs code and give the below in git cmd
+
+C:\Users\Admin\Desktop\foodmate>git add index.html
+
+C:\Users\Admin\Desktop\foodmate>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+C:\Users\Admin\Desktop\foodmate>git commit -m "Added index"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Admin@DESKTOP-L95B1JH.(none)')
+
+#Registration 
+
+C:\Users\Admin\Desktop\foodmate>git config --global user.email "kanishkaragu24@gmail.com"
+
+C:\Users\Admin\Desktop\foodmate>git config --global user.name "Kanish-Ragu"
+
+C:\Users\Admin\Desktop\foodmate>git commit -m "Added index"
+[master (root-commit) dfd6659] Added index
+ 1 file changed, 11 insertions(+)
+ create mode 100644 index.html
+
+C:\Users\Admin\Desktop\foodmate>
+C:\Users\Admin\Desktop\foodmate>#to commit
+'#to' is not recognized as an internal or external command,
+operable program or batch file.
+
+#To COMMIT :
+
+C:\Users\Admin\Desktop\foodmate>git log
+commit dfd66590db8050a9dac116ed0525f3fb3fd49232 (HEAD -> master)
+Author: Kanish-Ragu <kanishkaragu24@gmail.com>
+Date:   Mon Dec 30 08:35:49 2024 +0530
+
+    Added index
+#Rename the master ( main) branch
+
+
+C:\Users\Admin\Desktop\foodmate>git branch -m main
+
+C:\Users\Admin\Desktop\foodmate>git log
+commit dfd66590db8050a9dac116ed0525f3fb3fd49232 (HEAD -> main)
+Author: Kanish-Ragu <kanishkaragu24@gmail.com>
+Date:   Mon Dec 30 08:35:49 2024 +0530
+
+    Added index
+
+#now, if we what to make change in some code in index.html, and again and again we have to do 
+1) add
+2)commit 
+so together,
+              git commit -a -m "Update Index"
+C:\Users\Admin\Desktop\foodmate>git commit -a -m "Update Index"
+[main 78fcb18] Update Index
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+#to know changes 
+C:\Users\Admin\Desktop\foodmate>git log --oneline
+78fcb18 (HEAD -> main) Update Index
+dfd6659 Added index
+
